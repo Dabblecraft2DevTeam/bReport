@@ -16,7 +16,8 @@ import org.bukkit.configuration.file.YamlConfiguration;
  */
 public class MessageManager {
 
-    private static final Logger LOG = Logger.getLogger(MessageManager.class.getName());
+    @SuppressWarnings("unused")
+	private static final Logger LOG = Logger.getLogger(MessageManager.class.getName());
     private String name;
     private ReportPlugin rp;
     private Map<String, String> msg;

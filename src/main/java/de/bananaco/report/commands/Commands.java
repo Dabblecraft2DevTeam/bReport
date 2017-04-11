@@ -36,7 +36,8 @@ public class Commands extends JavaPlugin {
         this.mm = rp.getMsgManager();
     }
 
-    @Override
+    @SuppressWarnings("deprecation")
+	@Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         // Get the command name
         String cname = command.getName().toLowerCase(Locale.getDefault());
@@ -170,7 +171,8 @@ public class Commands extends JavaPlugin {
                 mm.msg(sender, Msg.REPORT_IS_RESOLVED);
                 // Inform the player that their report has been resolved if they are online
                 if (rp.getServer().getPlayerExact(report.getReporter()) != null) {
-                    Player player = rp.getServer().getPlayerExact(report.getReporter());
+                    @SuppressWarnings("unused")
+					Player player = rp.getServer().getPlayerExact(report.getReporter());
                     //player.sendMessage(ChatColor.AQUA + "[bR] " + ChatColor.GRAY + "A report you filed has been resolved by " + ChatColor.AQUA + rp.getName(sender));
                     mm.msg(sender, Msg.REPORT_RESOLVED, rp.getName(sender));
                     //player.sendMessage(ChatColor.GRAY + "** " + report.getReport());

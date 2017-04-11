@@ -33,5 +33,6 @@ public class AppTest
     public void testApp() {
         assertTrue(true);
     }
-    private static final Logger LOG = Logger.getLogger(AppTest.class.getName());
+    @SuppressWarnings("unused")
+	private static final Logger LOG = Logger.getLogger(AppTest.class.getName());
 }

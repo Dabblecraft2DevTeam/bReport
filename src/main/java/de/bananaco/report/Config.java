@@ -17,7 +17,8 @@ public class Config {
     private ReportPlugin rp;
     
     public Config(ReportPlugin rp) {
-        this.file = rp.getConfig();
+        this.file = new File("plugins/bReport/config.yml");
+        this.config = new YamlConfiguration();
         this.levenshtein = 6;
         this.ticketDisplay = 7;
         this.reportLength = 3;
