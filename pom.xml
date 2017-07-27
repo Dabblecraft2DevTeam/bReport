@@ -2,7 +2,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.projectbarks</groupId>
     <artifactId>bReports</artifactId>
     <version>1.5.9</version>
     <packaging>jar</packaging>
@@ -35,4 +34,5 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    <groupId>de.bananaco</groupId>
 </project>
