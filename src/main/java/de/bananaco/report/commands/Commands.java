@@ -21,7 +21,7 @@ import org.bukkit.entity.Player;
  *
  * @author Brandon Barker
  */
-public class Commands extends ReportPlugin {
+public class Commands extends JavaPlugin {
 
     private ReportPlugin rp;
     private ReportManager rm;
