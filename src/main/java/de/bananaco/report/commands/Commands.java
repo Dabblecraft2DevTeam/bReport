@@ -22,7 +22,7 @@ import org.bukkit.plugin.java.JavaPlugin;
  *
  * @author Brandon Barker
  */
-public class Commands extends JavaPlugin {
+public class Commands {
 
     private ReportPlugin rp;
     private ReportManager rm;
