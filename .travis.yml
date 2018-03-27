@@ -14,3 +14,4 @@ deploy:
   on:
     repo: Dabblecraft2DevTeam/bReport
     tags: true
+    branch: master
