@@ -24,6 +24,7 @@ import de.bananaco.report.report.SendMail;
  *
  * @author Brandon Barker
  */
+<<<<<<< HEAD
 public class Commands implements CommandExecutor {
 	
 	private ReportPlugin rp;
@@ -39,6 +40,23 @@ public class Commands implements CommandExecutor {
 	}
 	
 	@SuppressWarnings("deprecation")
+=======
+public class Commands extends JavaPlugin {
+
+    private ReportPlugin rp;
+    private ReportManager rm;
+    private Config config;
+    private MessageManager mm;
+
+    public Commands(ReportPlugin rp) {
+        this.rp = rp;
+        this.rm = rp.getReportManager();
+        this.config = rp.getConf();
+        this.mm = rp.getMsgManager();
+    }
+
+    @SuppressWarnings("deprecation")
+>>>>>>> 1c6cfa02f5b782a3c1deeeb85ac9508b82441810
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		// Get the command name
