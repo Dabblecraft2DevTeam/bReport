@@ -13,3 +13,4 @@ deploy:
   file: bReports.jar
   on:
     repo: Dabblecraft2DevTeam/bReport
+    tags: true
