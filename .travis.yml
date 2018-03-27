@@ -6,3 +6,10 @@ cache:
   - "$HOME/.m2/repository"
 script:
 - mvn clean package -B -V
+deploy:
+  provider: releases
+  api_key:
+    secure: UybrhhgpLEV9Sedr7mKyHwLIs8ahjiurLP8lfwh50AUHHnkmWFDtvI3XFbNbko6AU62/ZnpTAMKZIFIcglt+NbGiuuTI8JRTRbRwxWniptorqjAYeds+B6/0nE4kA7JnSN96Dqf+YzJ3ZeEylXQ+ECPVg5k+OqXLSm/Ocsbf/RT6lNC7YGePFB2Wz2BBc5Hux/5LwIRSnzPg4vAvpHxT3nXp6x18VL9VGwx9n+KLiJDha4JomWFtUsAjhNk4ZfDWaKqHPkyEWfop9pfDYgDODp3P9rYvEXWdtNDYnWAJWXKiC32uIOkaQWub5zkzviyw4HmZ46aSlO8RdoAe5rgLvmA1bv2uD+4BkGokprEdGyTKAweeziPNdduJreKdEh3R26BH7uVYusoV1Cs4H+FAsaQbnm8JLgoF67z3NURAh5gTWnl7biY++sPLUC9uVVM6PCr0OCslfg4rnwwaFLxT2V3w0lbOwERu31eXzffISfvPJF3A/NdTbdn5uJ1WicUVS21eQKVtf2E1Xzm5AFBNe0c7q3JX3cWFshROyz5hUxxnTyCywUKvZORZQX8FFrYRM9c965vs7L59NrrrTl1Um0LDJ6ztmmL0aQtywtV8+nWiLT0I4O4KcDuSfohOrxfUQdEUzAoUSusaZ3O3ohsXX8iLUamgqP+jLsgyVEHea/Q=
+  file: bReports.jar
+  on:
+    repo: Dabblecraft2DevTeam/bReport
