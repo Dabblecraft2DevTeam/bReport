@@ -25,6 +25,7 @@ import de.bananaco.report.report.SendMail;
  * @author Brandon Barker
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class Commands implements CommandExecutor {
 	
 	private ReportPlugin rp;
@@ -42,6 +43,9 @@ public class Commands implements CommandExecutor {
 	@SuppressWarnings("deprecation")
 =======
 public class Commands extends JavaPlugin {
+=======
+public class Commands extends ReportPlugin {
+>>>>>>> parent of 1c6cfa0... Update Commands.java
 
     private ReportPlugin rp;
     private ReportManager rm;
