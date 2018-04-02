@@ -19,4 +19,5 @@ commands:
         usage: /<command> message
     comment:
         usage: /<command> id [message]
-        
+    rgui:
+        usage: /<command>
